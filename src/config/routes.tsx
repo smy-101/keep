@@ -8,12 +8,16 @@ import { Welcome } from "../views/Welcome";
 export const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    component: Welcome,
+    redirect:'/welcome'
   },
   {
     path: "/welcome",
     component: Welcome,
     children: [
+      {
+        path:'',
+        redirect:'/welcome/1'
+      },
       {
         path: "1",
         component: First,
