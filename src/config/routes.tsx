@@ -31,7 +31,7 @@ export const routes: RouteRecordRaw[] = [
         component: Third,
       },
       {
-        path: "3",
+        path: "4",
         component: Fourth,
       },
     ],
